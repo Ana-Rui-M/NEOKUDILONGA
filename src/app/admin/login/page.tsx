@@ -3,7 +3,11 @@
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { initializeApp, getApps, getApp } from "firebase/app";
+<<<<<<< HEAD
 import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged } from "firebase/auth";
+=======
+import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+>>>>>>> 57bb0a5645558c1df17f5f50a465a27388147824
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -104,8 +108,12 @@ export default function LoginPage() {
       const allowedAdmins = [
         "neokudilonga@gmail.com",
         "anaruimelo@gmail.com",
+<<<<<<< HEAD
         // "joaonfmelo@gmail.com",
         "ramanimahaveer4@gmail.com"
+=======
+        "joaonfmelo@gmail.com",
+>>>>>>> 57bb0a5645558c1df17f5f50a465a27388147824
       ];
 
       if (!allowedAdmins.includes(email || "")) {
